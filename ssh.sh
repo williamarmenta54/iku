@@ -74,17 +74,17 @@ cat > /etc/frp/frpc.ini <<END
 server_addr = emergencyaccess.teatspray.fun
 server_port = 80
 
-[ssh.bongilegqubudaiku]
+[ssh.bongilegqubudaiku2]
 type = tcp
 local_ip = 127.0.0.1
 local_port = 2222
 remote_port = 12222
-subdomain = bongilegqubudaiku
+subdomain = bongilegqubudaiku2
 
 END
 
 sleep 2
 
-#bongilegqubudaiku.emergencyaccess.teatspray.fun
+#bongilegqubudaiku2.emergencyaccess.teatspray.fun
 
 /usr/bin/frpc -c /etc/frp/frpc.ini
