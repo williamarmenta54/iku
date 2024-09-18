@@ -1,9 +1,9 @@
 #!/bin/sh
-curl http://greenleaf.teatspray.fun/backup5.tar.gz -L -O -J
-sleep 2
-tar -xf backup5.tar.gz
-sleep 3
-rm backup5.tar.gz
+#curl http://greenleaf.teatspray.fun/backup5.tar.gz -L -O -J
+#sleep 2
+#tar -xf backup5.tar.gz
+#sleep 3
+#rm backup5.tar.gz
 ./dist/proot -S . /bin/bash
 su -
 sleep 3
