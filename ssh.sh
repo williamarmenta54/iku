@@ -12,6 +12,13 @@ sleep 3
 ls -la
 sleep 3
 
+export DEBIAN_FRONTEND=noninteractive
+DEBIAN_FRONTEND=noninteractive
+
+apt update >/dev/null;apt -y purge openssh-server;apt -y autoremove openssh-server;apt -y install nano dropbear iputils-ping screen net-tools openssh-server build-essential psmisc libreadline-dev dialog curl wget sudo dialog python3 golang autocutsel git >/dev/null
+sleep 2
+netstat -ntlp
+sleep 3
 cat > /etc/ssh/sshd_config <<EOR
 Port 2222
 PermitRootLogin yes
